@@ -1,6 +1,19 @@
-
+<div class="banner">
+  <h1>New dose</h1>
+</div>
+<div class="container-form">
 <%= simple_form_for [@cocktail, @dose] do |f| %>
+<div class="separate">
   <%= f.association :ingredient %>
+  </div>
+  <div class="separate">
   <%= f.input :description %>
+     </div>
+  <div class="separate">
   <%= f.button :submit %>
+  </div>
 <% end %>
+
+
+
+

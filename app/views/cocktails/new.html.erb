@@ -1,7 +1,19 @@
+<div class="banner">
+  <h1>New cocktail</h1>
+</div>
 <div class="container-form">
 <%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-   <%= f.input :photo, as: :file %>
+<div class="separate">
+  <%= f.input :name, class: "form-label" %>
+  </div>
+  <div class="separate">
+   <%= f.input :photo, as: :file, class:"form-control"%>
+     </div>
+  <div class="separate">
   <%= f.button :submit %>
+  </div>
 <% end %>
-</div>
+
+
+
+

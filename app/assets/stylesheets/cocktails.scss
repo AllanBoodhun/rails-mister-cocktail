@@ -4,12 +4,12 @@
 
 
 .banner {
-  background-image: url(https://www.esg-kassel.de/wp-content/uploads/2019/04/Cocktails-1030x539.jpg);
+  background: linear-gradient(90deg, rgba(2,58,90,1) 36%, rgba(0,39,61,1) 100%);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30vh;
+  height: 10vh;
   background-size: cover;
   background-position: center;
 }
@@ -17,24 +17,6 @@
 .banner p {
   font-size: bold;
   text-align: center;
-}
-
-.cocktail-card {
-  display: flex;
-  list-style-type: none;
-}
-
-li {
-  padding: 20px;
-  margin: 40px;
-  border: solid 1px white;
-
-}
-
-
-
-li a {
-  text-decoration: none;
 }
 
 
@@ -45,3 +27,29 @@ align-items: center;
 height: 100vh;
 }
 
+.container {
+  display:flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.container-show {
+  display:flex;
+  margin: 20px;
+  justify-content: center;
+  
+
+}
+
+.option{
+  text-align: center;
+}
+
+.description{
+  background-color: white;
+  padding: 20px;
+}
+
+.separate{
+  margin: 20px;
+}

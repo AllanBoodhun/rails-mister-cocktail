@@ -1,3 +1,26 @@
 // Place all the styles related to the doses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.banner {
+    background: linear-gradient(90deg, rgba(2,58,90,1) 36%, rgba(0,39,61,1) 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+.separate{
+    margin: 20px;
+  }
+
+  .container-form{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
