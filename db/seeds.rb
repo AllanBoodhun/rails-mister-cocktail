@@ -4,4 +4,19 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.first)*
+
+require 'json'
+require 'open-uri'
+url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
+ingredients_serialized = open(url).read
+ingredients = JSON.parse(ingredients_serialized)
+
+puts "Cleaning database..."
+Ingredient.destroy_all
+ingredients["drinks"].each do |ingredient|
+  # name = ingredient["strIngredient1"]
+  ingredient = Ingredient.create(name: ingredient["strIngredient1"])
+  puts ingredient
+end
+puts "Finished!"
