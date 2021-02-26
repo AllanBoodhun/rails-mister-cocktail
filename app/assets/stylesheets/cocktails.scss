@@ -2,7 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
 .banner {
-    background-image: url(app/assets/images/cocktails_home.jpg);
-    height: 200px;
+  background-image: url(https://www.esg-kassel.de/wp-content/uploads/2019/04/Cocktails-1030x539.jpg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
 }
+
+.banner p {
+  font-size: bold;
+  text-align: center;
+}
+
+.cocktail-card {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 20px;
+  margin: 40px;
+  border: solid 1px white;
+
+}
+
+
+
+li a {
+  text-decoration: none;
+}
+
+
+.container-form{
+display: flex;  
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
